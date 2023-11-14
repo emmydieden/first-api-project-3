@@ -26,12 +26,12 @@ export const BookList = () => {
   return (
     <>
       <div className="container">
-        <h2>Book List</h2>
+        <h2>Top 100 Trending Books</h2>
         
           {books.map((book) => (
             <div className={"book-card"} key={book.Rank}>
-                <h4>{book["book title"]}</h4>
-                <p>Ranking: {book.Rank}</p>
+                <h4>{book.Rank}. {book["book title"]}</h4>
+                <p>Author: {book.author}</p>
                 <p>Genre: {book.genre}</p>
                 <p>Rating: {book.rating}</p>
             </div>
